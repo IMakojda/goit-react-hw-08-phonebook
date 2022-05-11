@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/274.200c81c1.chunk.js","mappings":"+LAEaA,E,QAAMC,GAAAA,IAAH","sources":["views/ContactsView/Contactsview.styled.js"],"sourcesContent":["import styled from \"styled-components\";\n\nexport const Div = styled.div`\ndisplay: flex;\njustify-content: space-between;\n`"],"names":["Div","styled"],"sourceRoot":""}
