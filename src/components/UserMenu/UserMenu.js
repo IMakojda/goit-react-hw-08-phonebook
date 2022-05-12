@@ -20,8 +20,8 @@ export default function UserMenu() {
       <Span>Welcome
         <AvatartName>
           <FaceIcon sx={{ fontSize: 30 }} />
-          {ucFirst(name)}
         </AvatartName>
+        {ucFirst(name)}
       </Span>
       <OutlinedButtons text={'Logout'} func={() => dispatch(authOperations.logOut())} />
     </Div>

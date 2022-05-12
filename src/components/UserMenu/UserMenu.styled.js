@@ -14,5 +14,6 @@ export const Span = styled.span`
 export const AvatartName = styled.span`
   display: flex;
   align-items: center;
-  margin-left:10px;
+  margin:0 10px;
+
 `
