@@ -47,7 +47,7 @@ export default function LoginView() {
           <input type='email' name="email" value={email} onChange={handleChange} required />
         </Label>
         <Label><span>Password</span>
-          <input type='text' name="password" value={password} onChange={handleChange} required autoComplete="on" />
+          <input type='password' name="password" value={password} onChange={handleChange} required autoComplete="on" />
         </Label>
         <Button type="submit">LogIn</Button>
       </Form>

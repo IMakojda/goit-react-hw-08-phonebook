@@ -7,4 +7,12 @@ export const Div = styled.div`
 
 export const Span = styled.span`
   margin-right:10px;
+  display: flex;
+  align-items: center;
 `;
+
+export const AvatartName = styled.span`
+  display: flex;
+  align-items: center;
+  margin-left:10px;
+`
