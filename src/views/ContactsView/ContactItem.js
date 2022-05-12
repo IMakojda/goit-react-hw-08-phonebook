@@ -5,8 +5,8 @@ import { styled } from '@mui/material/styles';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import IconButtons from 'components/Button/IconButton';
-import ContactsIcon from '@mui/icons-material/Contacts';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import { IconContact } from 'components/Icon/IconContacts.styled';
+import { IconPhone } from 'components/Icon/IconPhone.styled';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -14,7 +14,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     color: theme.palette.common.white,
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 25,
+    fontSize: 30,
   },
 }));
 
@@ -37,14 +37,14 @@ const ContactItem = ({ nameItem, numberItem, id }) => {
         component="th"
         scope="row"
       >
-        <ContactsIcon />
+        <IconContact sx={{ fontSize: 25 }} />
         {nameItem}
       </StyledTableCell>
 
       <StyledTableCell
         align="right"
       >
-        <LocalPhoneIcon />
+        <IconPhone sx={{ fontSize: 25 }} />
         {numberItem}
       </StyledTableCell>
 

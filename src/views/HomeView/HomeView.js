@@ -1,7 +1,9 @@
+import { Title, Link } from "./HomeView.styled";
 export default function HomeView() {
   return (
-    <h1>
-      HomeView
-    </h1>
+    <Title>
+      Welcome this is a page for storing telephone contacts.
+      Please <Link to="/login">Login</Link>
+    </Title>
   );
 };

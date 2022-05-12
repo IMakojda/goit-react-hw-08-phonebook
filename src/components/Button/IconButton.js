@@ -7,8 +7,8 @@ export default function IconButtons({ func }) {
 
   return (
     <Stack direction="row" spacing={1} >
-      <IcButton aria-label="delete" onClick={func} >
-        <DeleteIcon />
+      <IcButton aria-label="delete" onClick={func} size="large">
+        <DeleteIcon fontSize="inherit" />
       </IcButton>
     </Stack >
   );

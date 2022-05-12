@@ -9,9 +9,9 @@ export const Link = styled(NavLink)`
   color: #2a363b;
   font-size: 20px;
   &.active {
-    color: #db1a5e;
+    color: #1976d2;
   }
   &:hover{
-    color:#db1a5e;
+    color:#1976d2;
   }
 `;
