@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/340.f8ec9a1d.chunk.js","mappings":"iMAAe,SAASA,IACtB,OACE","sources":["views/HomeView/HomeView.js"],"sourcesContent":["export default function HomeView() {\n  return (\n    <h1>\n      HomeView\n    </h1>\n  );\n};"],"names":["HomeView"],"sourceRoot":""}
