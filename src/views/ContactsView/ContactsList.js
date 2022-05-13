@@ -6,6 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ContactItem from './ContactItem';
+import { TitleContact } from './ContactsList.styled';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -44,9 +45,9 @@ export default function ContactsList({ contactsList }) {
     </div >
       :
       <div>
-        <p>
+        <TitleContact>
           Please add your contacts to phoneBook
-        </p>
+        </TitleContact>
       </div>
   )
 };
