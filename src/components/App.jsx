@@ -1,13 +1,13 @@
 import { Routes,Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useDispatch,useSelector } from "react-redux";
 import authOperations from "Redux/AuthReducer/AuthOperation";
 import { createAsyncPages } from "helpers/AsyncPage";
 import PrivateRoute from "./PrivateRoute";
 import PublickRoute from "./PublickRoute";
 import authSelector from "Redux/AuthReducer/Selector";
-
+import Spinner from 'react-bootstrap/Spinner'
 
 const HomeView = createAsyncPages('HomeView');
 const RegisterView = createAsyncPages('RegisterView');
@@ -25,13 +25,21 @@ export const App = () => {
   }, [dispatch])
   
   return (
+    
     !isRefreshUser && (
-      <>
+      <Suspense fallback={<Spinner animation="border" variant="primary" size="xl" />}>
         <Routes>
 
           <Route exact path='/' element={<Layout />} >
           
-            <Route index element={<HomeView />} />
+            <Route
+              index
+              element={
+                <PublickRoute redirectTo="/contacts" restricted>
+                  <HomeView />
+                </PublickRoute>
+                }
+            />
           
             <Route
               path='/register'
@@ -64,7 +72,7 @@ export const App = () => {
           </Route>
         
         </Routes>
-      </>
+      </Suspense>
     )
   );
 };

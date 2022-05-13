@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <Container>
       <AppBar />
-      <Suspense fallback={<Spinner animation="border" variant="primary" size="large" />}>
+      <Suspense fallback={<Spinner animation="border" variant="primary" size="xl" />}>
         <Outlet />
       </Suspense>
     </Container>
