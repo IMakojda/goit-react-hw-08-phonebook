@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/438.de2ebae9.chunk.js","mappings":"wMAEaA,E,QAAeC,GAAAA,EAAH","sources":["views/ContactsView/ContactsList.styled.js"],"sourcesContent":["import styled from \"styled-components\";\n\nexport const TitleContact = styled.p`\n  font-size: 45px;\n  text-align: center;\n  margin-top: 100px;\n`"],"names":["TitleContact","styled"],"sourceRoot":""}
